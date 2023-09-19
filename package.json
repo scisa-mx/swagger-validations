@@ -1,0 +1,29 @@
+{
+  "name": "swagger-validations",
+  "version": "0.1.1",
+  "description": "Validacion con swagger",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scisa-mx/swagger-validations.git"
+  },
+  "keywords": [
+    "npm",
+    "swagger"
+  ],
+  "author": "SCISA Dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scisa-mx/swagger-validations/issues"
+  },
+  "homepage": "https://github.com/scisa-mx/swagger-validations#readme",
+  "dependencies": {
+    "@vue/composition-api": "^1.4.1",
+    "swagger-object-validator": "^1.4.5",
+    "vue": "2.x",
+    "vue-currency-input": "^2.4.0"
+  }
+}
