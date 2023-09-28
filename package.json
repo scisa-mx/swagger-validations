@@ -4,7 +4,18 @@
   "description": "Validacion con swagger",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name SwaggerValidator ./src/install.js",
+    "lint": "vue-cli-service lint"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false,
+    "http": false,
+    "https": false
   },
   "repository": {
     "type": "git",
@@ -21,9 +32,12 @@
   },
   "homepage": "https://github.com/scisa-mx/swagger-validations#readme",
   "dependencies": {
+    "@vue/cli-service": "^5.0.8",
     "@vue/composition-api": "^1.4.1",
     "swagger-object-validator": "^1.4.5",
-    "vue": "2.x",
-    "vue-currency-input": "^2.4.0"
+    "vue": "2.6.14",
+    "vue-currency-input": "^2.4.0",
+    "vue-loader": "^15.10.0",
+    "vue-template-compiler": "2.6.14"
   }
 }

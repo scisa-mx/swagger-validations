@@ -52,9 +52,9 @@
 </template>
 
 <script>
-import InputValidator from 'inputValidator.vue'
-import CheckboxValidator from 'checkboxValidator.vue'
-import NumInputValidator from 'numInputValidator.vue'
+import InputValidator from './InputValidator.vue'
+import CheckboxValidator from './CheckboxValidator.vue'
+import NumInputValidator from './NumInputValidator.vue'
 import { getModelValues, handleSwaggerValidationErrorMessages } from '@/helpers'
 import { validateForm } from '../formValidations'
 

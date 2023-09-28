@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import NumInput from '@/components/NumInput.vue'
+import NumInput from './NumInput.vue'
 
 export default {
   components: {
