@@ -1,9 +1,9 @@
 import { FormGeneratorValidator } from "./formValidator/FormGeneratorValidator.vue";
 
-const FormGeneratorValidator1 = {
-    install(Vue, options) {
-     Vue.component("hello-world", FormGeneratorValidator);
+export const swaggerValidations = {
+    install(Vue) {
+        Vue.component("swagger-validations", FormGeneratorValidator);
     }
-   };
+};
 
-export default FormGeneratorValidator1
+export default swaggerValidations

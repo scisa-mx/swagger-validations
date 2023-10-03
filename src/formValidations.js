@@ -31,7 +31,7 @@ export const initializeValidations = (axiosInstance, url) => {
   })
 }
 
-const validateForm = (model, spec) => {
+export const validateForm = (model, spec) => {
   return new Promise((resolve, reject) => {
     /* eslint-disable-next-line */
     const specRef = validator.swaggerSpec['_rejectionHandler0'].components.schemas[spec]
