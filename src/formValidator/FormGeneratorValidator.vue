@@ -59,6 +59,7 @@ import { getModelValues, handleSwaggerValidationErrorMessages } from '@/helpers'
 import { validateForm } from '../formValidations'
 
 export default {
+  name: 'FormGeneratorValidator',
   components: {
     InputValidator,
     CheckboxValidator,

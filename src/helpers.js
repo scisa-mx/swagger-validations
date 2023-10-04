@@ -28,7 +28,7 @@ export function handleSwaggerValidationErrorMessages(errors, refs) {
   })
   function handleErrorMessages(error) {
     let errorMsg = 'error'
-    // TODO: Move messages to I18n
+    // TODO: Move messages to I18n 
     function constraintsViolation() {
       switch (error.constraintName) {
         case 'minLength':
