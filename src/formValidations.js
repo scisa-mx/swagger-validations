@@ -35,7 +35,15 @@ export const validateForm = (model, spec) => {
   return new Promise((resolve, reject) => {
     /* eslint-disable-next-line */
     const specRef = validator.swaggerSpec['_rejectionHandler0'].components.schemas[spec]
+    // FIXME: Added this to avoid a bug in swagger-object-validator
+    // But is this the best way ???
+    if(specRef.allOf) {
+      delete specRef.allOf
+    }
     validator.validateModel(model, specRef, (err, result) => {
+      debugger
+      console.log(result)
+      console.log(err)
       if (result.errors.length > 0) {
         reject(result.errors)
       } else {

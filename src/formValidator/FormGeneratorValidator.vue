@@ -126,6 +126,8 @@ export default {
           this.ifValid()
         })
         .catch(errors => {
+          debugger
+          console.log(errors)
           handleSwaggerValidationErrorMessages(errors, refs)
         })
     },
