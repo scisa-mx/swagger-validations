@@ -31,7 +31,7 @@ export const initializeValidations = (axiosInstance, url) => {
   })
 }
 
-export const validateForm = (model, spec) => {
+export const validateForm = ({ model, spec }) => {
   return new Promise((resolve, reject) => {
     /* eslint-disable-next-line */
     const specRef = validator.swaggerSpec['_rejectionHandler0'].components.schemas[spec]
@@ -41,9 +41,6 @@ export const validateForm = (model, spec) => {
       delete specRef.allOf
     }
     validator.validateModel(model, specRef, (err, result) => {
-      debugger
-      console.log(result)
-      console.log(err)
       if (result.errors.length > 0) {
         reject(result.errors)
       } else {
